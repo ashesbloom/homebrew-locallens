@@ -1,0 +1,31 @@
+name: Validate Cask
+
+on:
+  pull_request:
+    paths:
+      - 'Casks/**'
+  push:
+    branches:
+      - main
+    paths:
+      - 'Casks/**'
+
+jobs:
+  validate:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Validate cask syntax
+        run: |
+          brew style --fix Casks/local-lens.rb || true
+          brew audit --cask Casks/local-lens.rb
+
+      - name: Install cask (dry run)
+        run: |
+          brew install --cask --dry-run Casks/local-lens.rb
