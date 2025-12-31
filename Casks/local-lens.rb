@@ -4,7 +4,7 @@ cask "local-lens" do
 
   url "https://github.com/ashesbloom/LocalLens/releases/download/v#{version}/Local_Lens_v#{version}_aarch64.dmg"
   name "Local Lens"
-  desc "Privacy-first, AI-powered photo organizer for your PC"
+  desc "Privacy-first, AI-powered photo organizer for your Mac"
   homepage "https://github.com/ashesbloom/LocalLens"
 
   livecheck do
