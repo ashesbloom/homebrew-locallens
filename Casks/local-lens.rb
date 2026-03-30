@@ -1,6 +1,6 @@
 cask "local-lens" do
-  version "2.2.1"
-  sha256 "03e11106f0224caa4be8184c555cd61180250328a2a2e76a3d45481c787a60b6"
+  version "2.2.2"
+  sha256 "77f272d3db8e84a00f953964c6bb769ec51e6d568a3be7cb19fcd9b4faa0eac4"
 
   url "https://github.com/ashesbloom/LocalLens/releases/download/v#{version}/Local_Lens_v#{version}_aarch64.dmg",
       verified: "github.com/ashesbloom/LocalLens/"
