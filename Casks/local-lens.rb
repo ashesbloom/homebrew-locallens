@@ -2,7 +2,7 @@ cask "local-lens" do
   version "2.4.1"
   sha256 "5fd6bf02212d9d706c56d35181f2f49506e14e5d042ad562770abdcec3b71dad"
 
-  url "https://github.com/ashesbloom/LocalLens/releases/download/v#{version}/Local Lens_2.4.1_aarch64.dmg",
+  url "https://github.com/ashesbloom/LocalLens/releases/download/v#{version}/Local.Lens_2.4.1_aarch64.dmg",
       verified: "github.com/ashesbloom/LocalLens/"
   name "Local Lens"
   desc "AI-powered offline photo organizer with face recognition"
