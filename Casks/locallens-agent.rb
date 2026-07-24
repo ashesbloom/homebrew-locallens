@@ -1,16 +1,16 @@
 cask "locallens-agent" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.0.16"
+  version "1.0.17"
 
   on_arm do
-    sha256 "6e20f6099664072b92bdb17284df35801c69313ea7b9099710bbaa27cce52409"
+    sha256 "b867707f0ffaa6ded047496e47db296c281379b9111f77f9a49677284eeb8977"
     url "https://github.com/ashesbloom/locallens_mcp_agent/releases/download/v#{version}/locallens-agent-v#{version}-macos-arm64.dmg",
         verified: "github.com/ashesbloom/locallens_mcp_agent/"
   end
 
   on_intel do
-    sha256 "6e20f6099664072b92bdb17284df35801c69313ea7b9099710bbaa27cce52409"
+    sha256 "b867707f0ffaa6ded047496e47db296c281379b9111f77f9a49677284eeb8977"
     url "https://github.com/ashesbloom/locallens_mcp_agent/releases/download/v#{version}/locallens-agent-v#{version}-macos-x86_64.dmg",
         verified: "github.com/ashesbloom/locallens_mcp_agent/"
   end
